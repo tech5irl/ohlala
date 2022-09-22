@@ -5,7 +5,7 @@ jobs:
   test:
     macos:
       xcode: 12.5.1
-#     resource_class: large
+    resource_class: medium+
     steps:
       - run: echo Hello
 
