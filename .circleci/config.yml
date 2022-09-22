@@ -7,7 +7,6 @@ jobs:
   test:
     machine:
       image: ubuntu-2004:2022.04.2 # recommended linux image
-    resource_class: large
     resource_class: 2xlarge
     steps:
       - browser-tools/install-chrome
