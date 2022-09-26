@@ -1,17 +1,15 @@
 version: 2.1
 
-orbs: 
-  browser-tools: circleci/browser-tools@1.2.5
 
 jobs:
   test:
-    machine:
-      image: ubuntu-2004:2022.04.2 # recommended linux image
-    resource_class: 2xlarge
+    macos:
+      xcode: 12.5.1
+    resource_class: large
     steps:
-      - browser-tools/install-chrome
+      - run: echo Hello
 
 workflows:
-  damain:
+  main:
     jobs:
       - test
